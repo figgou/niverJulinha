@@ -1,0 +1,246 @@
+body {
+    transition: background-color 1s ease;
+    background-color: #111;
+    color: white;
+}
+
+.inicio {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#hbday {
+    transition: all 0.5s ease;
+    margin-bottom: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#startText
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 2em;
+}
+ 
+.buttonStart
+{       
+    transition: all 0.5s ease;
+
+    height: 50px;
+    width: 70px;
+
+    border: none;
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.buttonStart:hover {
+    transform: scale(1.08);
+}
+.buttonStart:active {
+    transform: scale(0.95);
+}
+
+.buttonStart.hidden {
+    opacity: 0;
+    transform: scale(0.7);
+    pointer-events: none;
+}
+
+#chiikawaStart
+{
+    align-self: flex-start;
+    display : block;
+    margin-top: -10em;
+    margin-left: 2em;
+    height: 200px;
+    width: 200px;
+
+    animation: flutuar2 ease-in-out 4.5s infinite;
+
+}
+
+@keyframes flutuar2 {
+    0% {
+        transform: translateY(-10) rotate(4deg);
+    }
+
+    50% {
+        transform: translateY(50px) rotate(-4deg);
+        
+    }
+
+    100% {
+        transform: translateY(-10) rotate(4deg);
+    }
+}
+
+#chiikawaMessage {
+    align-self: right;
+    margin-left: 15em;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.setaScroll {
+    min-height: 20vh;
+    display: block;
+
+    filter: brightness(0) invert(1);
+
+    width: 40px;
+
+    margin: 40px auto 0 auto;
+
+    animation: flutuar 1.5s infinite;
+}
+
+#none1
+{
+    min-height: 1vh;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.text {
+    margin-top: 5em;
+}
+
+.text p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 400px;
+}
+
+#texto1
+{
+    text-align: left;
+}
+
+.album {
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album img {
+    transition: all 0.5s ease;
+    
+    align-self: flex-end;
+    
+    width: 150px;
+    height: 150px;
+    
+    object-fit: cover;
+    
+    border-radius: 10%;
+    
+    margin-left: 3em;
+    margin-right: 3em;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    animation: flutuar1 4s ease-in-out infinite;
+}
+
+@keyframes flutuar1 {
+    0% {
+        transform: translateY(0) rotate(2deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(-2deg);
+        
+    }
+
+    100% {
+        transform: translateY(0) rotate(2deg);
+    }
+}
+
+.album p {
+    max-width: 400px;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#advantageLucy img{
+    align-self: flex-end;
+}
+
+#advantageLucy p{
+  align-self: flex-end;
+}
+
+#lillyChouChou img{
+    align-self: flex-start;
+}
+
+#lillyChouChou p{
+    text-align: right;
+}
+
+#komSusser img{
+    align-self: flex-start;
+}
+
+#komSusser p{
+    text-align: right;
+}
+#borealopelta {
+    display : block;
+
+    margin-top: -10em;
+    margin-left: 10em;    
+
+    width: 200px;
+
+    animation: flutuar2 ease-in-out 4.5s infinite;
+}
+
+#borealopeltaText {
+    align-self: flex-start;
+    margin-left: 2em;
+
+    max-width: 100px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#finalText {
+    font-size: 2.5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 400px;
+    text-align: center;
+}
+
+#credits {
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 2.5em;
+}
